@@ -15,7 +15,7 @@ module.exports = {
         customCyan: '#45B7F5',
         customGray: '#F0FFFF',
         customNavyBlue: '#171C33',
-        'custom-light-blue': 'rgba(69, 183, 245, 0.4)'
+        'custom-light-blue': 'rgba(69, 183, 245, 0.6)'
       },
       backgroundImage: {
         bodyBackground: "url('assets/images/bodyBackground.webp')"
@@ -39,7 +39,8 @@ module.exports = {
         'custom-black': '3px 3px 3px 1px rgba(0, 0, 0, 0.3)'
       },
       dropShadow: {
-        'custom-blue': '1px 2px 8px rgba(69, 183, 245, 0.9)'
+        'custom-blue': '1px 2px 8px rgba(69, 183, 245, 0.9)',
+        'custom-black': '10px 10px 10px 10px rgba(0, 0, 0, 0.9)'
       }
     }
   }

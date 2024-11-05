@@ -19,10 +19,12 @@ export default function SkillsPage() {
   return (
     <section
       className='mx-auto min-h-[calc(min(100vh,1080px))] w-full justify-center overflow-hidden py-[50px] text-center md:flex md:flex-col md:items-center md:justify-center'
-      id='skillsPage'
+      id='skills'
     >
       <div className='' data-aos='zoom-in' data-aos-delay='100'>
-        <h2 className='mb-8 text-5xl font-black text-white'>Habilidades</h2>
+        <h2 className='title-animation mb-8 text-5xl font-black text-white'>
+          Habilidades
+        </h2>
       </div>
       <div className='mx-auto my-8 grid w-[90%] max-w-screen-xl grid-cols-[repeat(auto-fit,minmax(200px,1fr))] items-center justify-center gap-5 px-5 xl:grid-cols-[repeat(auto-fit,minmax(300px,1fr))]'>
         {skills.map((skill) => (

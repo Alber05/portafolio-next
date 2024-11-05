@@ -4,6 +4,10 @@
 
 /* ANIMACIONES HOMEPAGE */
 
+html {
+  scroll-behavior: smooth;
+}
+
 .title-animation {
   background: url('./assets/images/section-hero/animated-text-fill.webp')
     repeat-y;
@@ -98,17 +102,27 @@
 .card {
   perspective: 800px;
 }
+
 .card__content {
   transform-style: preserve-3d;
+  transition: transform 0.6s ease-in-out; /* Tiempo de transición */
 }
+
 .card:hover .card__content {
   transform: rotateY(0.5turn);
+  transition-delay: 0.3s;
 }
 
 .card__front,
 .card__back {
   backface-visibility: hidden;
 }
+
 .card__back {
   transform: rotateY(0.5turn);
+  transition: transform 0.6s ease-in-out; /* Asegúrate de que la transición también esté aquí */
+}
+
+.custom-text-shadow {
+  @apply [text-shadow:_0_2px_4px_rgb(0_0_0_/_0.7)];
 }

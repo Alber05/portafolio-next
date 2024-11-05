@@ -6,7 +6,7 @@ import { faXmark } from '@fortawesome/free-solid-svg-icons'
 function MobileNav({ showMenu, setShowMenu }) {
   return (
     <div
-      className={`fixed left-0 top-0 z-10 min-h-screen w-[50vw] md:hidden ${
+      className={`fixed left-0 top-0 z-[200] min-h-screen w-[50vw] md:hidden ${
         showMenu ? 'translate-x-0 opacity-100' : '-translate-x-full opacity-50'
       } bg-customGray text-customNavyBlue transition duration-200`}
     >
@@ -20,23 +20,43 @@ function MobileNav({ showMenu, setShowMenu }) {
       </div>
       <nav className='mx-auto w-[80%]'>
         <ul className='flex flex-col gap-8 text-lg font-semibold'>
-          <li className='navlLink-destop_wrapper'>
-            <a className='navLink-desktop_item' href='#'>
+          <li
+            className='navlLink-destop_wrapper'
+            onClick={() => setShowMenu(false)}
+          >
+            <a className='navLink-desktop_item' href='#hero'>
               Inicio
             </a>
           </li>
-          <li className='navlLink-destop_wrapper'>
-            <a className='navLink-desktop_item' href='#'>
-              Proyectos
+          <li
+            className='navlLink-destop_wrapper'
+            onClick={() => setShowMenu(false)}
+          >
+            <a className='navLink-desktop_item' href='#about-me'>
+              Sobre mí
             </a>
           </li>
-          <li className='navlLink-destop_wrapper'>
-            <a className='navLink-desktop_item' href='#'>
+          <li
+            className='navlLink-destop_wrapper'
+            onClick={() => setShowMenu(false)}
+          >
+            <a className='navLink-desktop_item' href='#skills'>
               Habilidades
             </a>
           </li>
-          <li className='navlLink-destop_wrapper'>
-            <a className='navLink-desktop_item' href='#'>
+          <li
+            className='navlLink-destop_wrapper'
+            onClick={() => setShowMenu(false)}
+          >
+            <a className='navLink-desktop_item' href='#projects'>
+              Proyectos
+            </a>
+          </li>
+          <li
+            className='navlLink-destop_wrapper'
+            onClick={() => setShowMenu(false)}
+          >
+            <a className='navLink-desktop_item' href='#contact'>
               Contacto
             </a>
           </li>

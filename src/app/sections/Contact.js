@@ -8,10 +8,10 @@ function Contact() {
   return (
     <section
       className='flex min-h-[calc(min(100vh,1080px))] w-full flex-col items-center justify-center overflow-hidden text-center'
-      id='contactPage'
+      id='contact'
     >
       <div className='my-[50px] h-full' data-aos='zoom-in' data-aos-delay='100'>
-        <h2 className='title-animation text-5xl font-bold'>CONTACTO</h2>
+        <h2 className='title-animation text-5xl font-black'>CONTACTO</h2>
       </div>
       <div className='mx-auto flex w-[90%] flex-col items-center justify-center'>
         <div className='relative w-full max-w-[500px]'>

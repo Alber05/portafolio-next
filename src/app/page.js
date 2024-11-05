@@ -1,3 +1,4 @@
+import Aboutme from './sections/Aboutme'
 import Contact from './sections/Contact'
 import Hero from './sections/Hero'
 import Projects from './sections/Projects/Projects'
@@ -7,8 +8,9 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <Projects />
+      <Aboutme />
       <SkillsPage />
+      <Projects />
       <Contact />
     </>
   )
