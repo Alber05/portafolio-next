@@ -10,7 +10,7 @@ function Header() {
   const [showMenu, setShowMenu] = useState(false)
 
   return (
-    <header className='sticky top-0 z-[100] flex w-full items-center py-3 text-white'>
+    <header className='sticky top-0 z-[100] flex h-[80px] w-full items-center py-3 text-white'>
       {/* Capa de desenfoque en la parte inferior */}
       <div className='pointer-events-none absolute left-0 top-0 z-[90] h-[80px] w-full bg-transparent backdrop-blur-sm' />
       <div className='navWrapper mx-auto flex h-full w-[90%] items-center justify-between'>
