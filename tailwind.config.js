@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+const plugin = require('tailwindcss/plugin')
+
 module.exports = {
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
@@ -43,5 +45,26 @@ module.exports = {
         'custom-black': '10px 10px 10px 10px rgba(0, 0, 0, 0.9)'
       }
     }
-  }
+  },
+  plugins: [
+    plugin(function ({ addUtilities }) {
+      addUtilities({
+        '.bg-fixed-before': {
+          position: 'relative',
+          '&::before': {
+            content: '""',
+            position: 'fixed',
+            top: '0',
+            left: '0',
+            width: '100vw',
+            height: '100vh',
+            backgroundImage: "url('assets/images/bodyBackground.webp')",
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            zIndex: '-1'
+          }
+        }
+      })
+    })
+  ]
 }

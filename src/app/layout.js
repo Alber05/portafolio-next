@@ -17,8 +17,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang='es'>
-      <body className={`${kanit.className} relative`}>
-        <div className='absolute left-0 top-0 -z-10 h-full w-full bg-bodyBackground bg-cover bg-fixed bg-center bg-no-repeat'></div>
+      <body className={`${kanit.className} bg-fixed-before`}>
         <Header />
         <main className='overflow-hidden'>{children}</main>
       </body>
