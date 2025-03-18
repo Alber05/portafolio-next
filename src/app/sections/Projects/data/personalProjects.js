@@ -1,6 +1,7 @@
 /*Projectos Corporativos*/
 import MockupCirugiaDeLaMano from '../../../assets/images/corporativeProjectsImages/mockup-cirugia-de-la-mano.png'
 import MockupInnocleanSolar from '../../../assets/images/corporativeProjectsImages/mockup-innoclean-solar.png'
+import MockupLaLuna from '../../../assets/images/corporativeProjectsImages/mockup-la-Luna.png'
 
 /* Projectos Persolanes */
 import ageCalculator from '../../../assets/images/personalProjectsImages/mockup-age-calculator.webp'
@@ -115,6 +116,15 @@ export const corporateProjectsData = [
       'Proyecto desarrollado para InnoCleanSolar S.L., destacando el servicio de limpieza robótica de paneles solares y sus ventajas. Construido con Next.js y Tailwind, ofrece una experiencia de navegación ágil en móviles y escritorios, optimizando el rendimiento y la velocidad de carga. Esto asegura que los usuarios accedan de forma rápida a información clave sobre cómo la limpieza automatizada aumenta la eficiencia energética y extiende la vida útil de los paneles solares.',
     image: MockupInnocleanSolar,
     demo: 'https://www.innocleansolar.es/',
+    github: ''
+  },
+  {
+    title: 'Salones La Luna',
+    technologies: ['html', 'tailwind', 'ReactJs'],
+    description:
+      'Proyecto desarrollado para Salones La Luna Tobarra presentando un planificador interactivo de menús de boda Construido con Next.js y Tailwind ofrece una experiencia fluida en dispositivos móviles y de escritorio permitiendo a las parejas personalizar su menú y obtener presupuestos instantáneos Los usuarios pueden seleccionar platos ajustar el número de invitados y generar un PDF del menú final optimizando el proceso de planificación y mejorando la comunicación entre los clientes y el equipo de eventos del restaurante',
+    image: MockupLaLuna,
+    demo: 'https://la-luna-orcin.vercel.app/',
     github: ''
   }
 ]
